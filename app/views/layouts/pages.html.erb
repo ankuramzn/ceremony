@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration</title>
+  <%= stylesheet_link_tag 'css.css', 'jquery-ui-1.8.14.custom' %>
+  <%= javascript_include_tag 'jquery.js', 'jquery-ui-1.8.14.custom.min', 'rails.js', 'application' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+
+
+<div class="title_box">
+<h1>Student Graduation Registration</h1>
+</div>
+
+
+<div class="actions_bar">
+
+   <ul>
+     <li>
+        <%= link_to 'Log In', log_in_path %>
+     </li>
+   </ul>
+</div>
+
+<div class="core">
+
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    <% end %>
+
+    <%= yield %>
+</div>
+
+<div id='footer'>
+  Copyright 2011 School of Arts, UoA
+</div>
+
+</body>
+</html>

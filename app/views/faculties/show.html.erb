@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @faculty.name %>
+</p>
+
+<p>
+  <b>Available:</b>
+  <%= @faculty.available %>
+</p>
+
+<p>
+  <b>Program:</b>
+  <%= @faculty.program_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_faculty_path(@faculty) %> |
+<%= link_to 'Back', faculties_path %>

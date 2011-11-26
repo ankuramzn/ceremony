@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Netid:</b>
+  <%= @student.netid %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @student.name %>
+</p>
+
+<p>
+  <b>Address line 1:</b>
+  <%= @student.address_line_1 %>
+</p>
+
+<p>
+  <b>Address line 2:</b>
+  <%= @student.address_line_2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @student.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @student.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%= @student.zip %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @student.dob %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

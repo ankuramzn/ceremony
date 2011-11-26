@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Location:</b>
+  <%= @graduation.location %>
+</p>
+
+<p>
+  <b>Schedule:</b>
+  <%= @graduation.schedule %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @graduation.duration %>
+</p>
+
+<p>
+  <b>For semester:</b>
+  <%= @graduation.for_semester %>
+</p>
+
+<p>
+  <b>For year:</b>
+  <%= @graduation.for_year %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @graduation.active %>
+</p>
+
+
+<%= link_to 'Edit', edit_graduation_path(@graduation) %> |
+<%= link_to 'Back', graduations_path %>

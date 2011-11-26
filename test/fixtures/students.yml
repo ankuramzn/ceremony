@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  netid: MyString
+  name: MyString
+  address_line_1: MyString
+  address_line_2: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  dob: 2011-11-25
+
+two:
+  netid: MyString
+  name: MyString
+  address_line_1: MyString
+  address_line_2: MyString
+  city: MyString
+  state: MyString
+  zip: 1
+  dob: 2011-11-25

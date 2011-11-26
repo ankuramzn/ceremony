@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  location: MyString
+  schedule: 2011-11-25 16:48:58
+  duration: 1
+  for_semester: MyString
+  for_year: 1
+  active: false
+
+two:
+  location: MyString
+  schedule: 2011-11-25 16:48:58
+  duration: 1
+  for_semester: MyString
+  for_year: 1
+  active: false

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graduation</title>
+  <%= stylesheet_link_tag 'css.css', 'jquery-ui-1.8.14.custom' %>
+  <%= javascript_include_tag 'jquery.js', 'jquery-ui-1.8.14.custom.min', 'rails.js', 'application' %>
+
+  <%= csrf_meta_tag %>
+</head>
+
+
+
+
+
+<body>
+
+
+<div class="title_box">
+<h1>Student Graduation Registration</h1>
+</div>
+
+
+<div class="actions_bar">
+
+   <ul>
+     <li>
+        <%= link_to 'Edit Personal Details', edit_student_path(@student) %>
+     </li>
+     <li>
+        <%= link_to 'Logout', '#' %>
+     </li>
+   </ul>
+</div>
+
+<div class="core">
+
+
+    <%= yield %>
+
+</div>
+
+<div id='footer'>
+  Copyright 2011 School of Arts, UoA
+</div>
+
+</body>
+</html>

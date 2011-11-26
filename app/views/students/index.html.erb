@@ -1,0 +1,37 @@
+<h1>Listing students</h1>
+
+<table>
+  <tr>
+    <th>Netid</th>
+    <th>Name</th>
+    <th>Address line 1</th>
+    <th>Address line 2</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Dob</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%= student.netid %></td>
+    <td><%= student.name %></td>
+    <td><%= student.address_line_1 %></td>
+    <td><%= student.address_line_2 %></td>
+    <td><%= student.city %></td>
+    <td><%= student.state %></td>
+    <td><%= student.zip %></td>
+    <td><%= student.dob %></td>
+    <td><%= link_to 'Show', student %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student', new_student_path %>

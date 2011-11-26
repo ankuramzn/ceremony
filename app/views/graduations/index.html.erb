@@ -1,0 +1,33 @@
+<h1>Listing graduations</h1>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Schedule</th>
+    <th>Duration</th>
+    <th>For semester</th>
+    <th>For year</th>
+    <th>Active</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @graduations.each do |graduation| %>
+  <tr>
+    <td><%= graduation.location %></td>
+    <td><%= graduation.schedule %></td>
+    <td><%= graduation.duration %></td>
+    <td><%= graduation.for_semester %></td>
+    <td><%= graduation.for_year %></td>
+    <td><%= graduation.active %></td>
+    <td><%= link_to 'Show', graduation %></td>
+    <td><%= link_to 'Edit', edit_graduation_path(graduation) %></td>
+    <td><%= link_to 'Destroy', graduation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Graduation', new_graduation_path %>
